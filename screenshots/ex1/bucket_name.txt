@@ -1,0 +1,26 @@
+[cloudshell-user@ip-10-134-47-114 ~]$ aws cloudformation describe-stacks --region us-east-1 --stack-name c3-s3 --query "Stacks[0].Outputs"
+[
+    {
+        "OutputKey": "BucketArnVPCFlowLogs",
+        "OutputValue": "arn:aws:s3:::cand-c3-vpc-flow-logs-061658074557",
+        "Description": "Arn of the Amazon S3 bucket that have vpc flow logs for this project",
+        "ExportName": "BucketArnVPCFlowLogs"
+    },
+    {
+        "OutputKey": "BucketNameRecipesFree",
+        "OutputValue": "cand-c3-free-recipes-061658074557",
+        "Description": "Name of the Amazon S3 bucket that you will upload free recipes to.",
+        "ExportName": "BucketNameRecipesFree"
+    },
+    {
+        "OutputKey": "BucketNameRecipesSecret",
+        "OutputValue": "cand-c3-secret-recipes-061658074557",
+        "Description": "Name of the Amazon S3 bucket that you will upload secret recipes to.",
+        "ExportName": "BucketNameRecipesSecret"
+    }
+]
+
+
+
+
+
