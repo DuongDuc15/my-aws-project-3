@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Access to EC2 Instances:
+- EC2 instances can be easily accessed if weak passwords are used or private keys are stored insecurely.
+
+# Poor practice 2
+Security groups
+- Security groups may allow unrestricted access to EC2 instances or services, making them vulnerable to attackers scanning for open ports such as SSH or HTTP
