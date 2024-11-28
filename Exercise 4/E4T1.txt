@@ -1,0 +1,15 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+
+1. Enable Multi-Factor Authentication (MFA) and Use SSH Key Pair Authentication
+2. Restrict SSH Access to Trusted IPs
+3. Disable Password Authentication and Enforce SSH Key Pair Authentication
+
+
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+1. Implement IAM Policies with Least Privilege
+2. Use S3 Bucket Policies, apply policies that use source IP address restrictions or IAM roles to limit access
+3. Limit instances profile role that can access buckets
+

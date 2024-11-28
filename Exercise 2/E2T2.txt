@@ -1,0 +1,14 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1. IAM policy grants full access to all resources, which could allow users to perform unauthorized actions on critical resources
+2. EC2 instance is accessible from the internet through port 5000
+3. CloudTrail is not specified, which can cause a lack of logs for monitoring API
+4. Loadbalancer does not have HTTP->HTTPS redirection
+5. Does not enforce the use of non-root accounts
+
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Restrict IAM policies to grant only the specific permissions for each user
+2. Activate server-side encryption for all S3 buckets
+3. Update the Application Load Balancer settings to redirect all HTTP requests to HTTPS 
+4. Limit inbound and outbound traffic to only required ports; use referenced security groups for internal communication within the VPC
+5. Configure CloudTrail to capture all API activity, store logs securely in an S3 bucket

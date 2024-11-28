@@ -1,0 +1,22 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Use Terrascan or Regula
+
+### Example vulnerability
+- IAM Role with excessive permissions
+- Server Side Encryption not enabled
+
+##Scan AMI’s or containers for OS vulnerabilities
+- AquaSec or Ansible
+
+### Example vulnerability
+- Weak permissions on SSH configuration
+- Unpatched kernel vulnerabilities
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config or AWS GuardDuty
+
+### Example vulnerability
+- Overly permissive S3 Bucket Policies
+- Compromised IAM credentials
